@@ -17,7 +17,7 @@ public class BusinessService {
 	
 	//display all books
 	public Map<String, Book> getAllBook(){
-		return null;
+		return dao.getAllBook();
 	}
 	
 	//add a certain book to cart
