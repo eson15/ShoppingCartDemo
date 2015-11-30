@@ -26,7 +26,7 @@
 	    		<td>${me.value.price }</td>
 	    		<td>${me.value.description }</td>
 	    		<td>
-	    			<a href="${pageContext.request.contextPath }/servlet/BuyServlet?bookid=${me.key}">加入购物车</a>
+	    			<a href="${pageContext.request.contextPath }/servlet/BuyServlet?bookid=${me.key}&token=${token}">加入购物车</a>
 	    		</td>
     		</tr>
     	</c:forEach>
