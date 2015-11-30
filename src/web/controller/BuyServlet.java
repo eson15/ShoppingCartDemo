@@ -18,6 +18,8 @@ public class BuyServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=UTF-8");
 		String bookid = request.getParameter("bookid");
 		Cart cart = (Cart) request.getSession().getAttribute("cart");
 		if(cart == null){

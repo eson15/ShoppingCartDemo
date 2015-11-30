@@ -15,6 +15,9 @@ public class updateCartServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=UTF-8");
 		try {
 				String bookid = request.getParameter("bookid");
 				int count = Integer.parseInt(request.getParameter("count"));
